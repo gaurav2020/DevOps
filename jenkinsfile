@@ -1,0 +1,11 @@
+node("master"){
+    stage("code checkout"){
+        sh "echo helo"
+    }
+    stage ("code build"){
+        sh "echo build"
+    }
+    stage ("unit test"){
+        sh "echo unit"
+    }
+}
