@@ -6,6 +6,11 @@
 	<artifactId>demosampleapplication</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>
+	<properties>
+       <java.version>1.8</java.version>
+       <maven.compiler.source>1.8</maven.compiler.source>
+       <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
 	<name>Devops Sample Application</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -165,12 +170,15 @@
 			<artifactId>mail</artifactId>
 			<version>1.4</version>
 		</dependency>
+		
+		
 		<dependency>
 			<groupId>jaf</groupId>
 			<artifactId>activation</artifactId>
 			<version>1.0.2</version>
 			<scope>provided</scope>
-		</dependency>
+			</dependency>
+		
 		<dependency>
 			<groupId>com.sun.mail</groupId>
 			<artifactId>smtp</artifactId>
